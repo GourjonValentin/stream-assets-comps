@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Grimpeurs en cours</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+<form action="index.php" method="post">
+    <div>
+        <label for="fichier">Fichier source :</label>
+        <input type="file" name="fichier" id="fichier">
+    </div>
+    <br />
+    <div>
+        <label for="discipline">Type de compétition :</label>
+        <select name="discipline" id="discipline">
+            <option value="1">Difficulté</option>
+            <option value="2">Bloc</option>
+            <option value="3">Vitesse</option>
+        </select>
+    </div>
+    <br />
+    <div>
+        <button type="submit">Envoyer</button>
+    </div>
+</form>
+
+
+    <!-- Affichage du tableau -->
+    <div id="tableau"></div>
+    <br />
+
+</body>
+</html>
