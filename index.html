@@ -6,31 +6,22 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
 </head>
-<body>
-<form action="index.php" method="post">
-    <div>
-        <label for="fichier">Fichier source :</label>
-        <input type="file" name="fichier" id="fichier">
-    </div>
-    <br />
-    <div>
-        <label for="discipline">Type de compétition :</label>
-        <select name="discipline" id="discipline">
-            <option value="1">Difficulté</option>
-            <option value="2">Bloc</option>
-            <option value="3">Vitesse</option>
-        </select>
-    </div>
-    <br />
-    <div>
-        <button type="submit">Envoyer</button>
-    </div>
-</form>
+<body onload="init();">
 
 
     <!-- Affichage du tableau -->
-    <div id="tableau"></div>
+    <div id="tableau">
+        <div id="gauche"></div>
+        <div id="droite"></div>
+    </div>
+
+
     <br />
 
+    <!-- Affichage des boutons de controle -->
+    <div id="controle">
+        <button id="precedent" onclick="precedent();">Précédent</button>
+        <button id="suivant" onclick="suivant();">Suivant</button>
+    </div>
 </body>
 </html>
