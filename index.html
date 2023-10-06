@@ -3,15 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Grimpeurs en cours</title>
-    <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body onload="init();">
+    <style contenteditable="true" style="display: block">
+        #gauche, #droite {
+            width: 50%;
+            height: 100%;
+            padding: 15px;
+            background-color: #00ff00;
+        }
 
+        #droite {
+            text-align: right;
+            background-color: #00ff00;
+
+        }
+    </style>
+
+    <br/>
 
     <!-- Affichage du tableau -->
     <div id="tableau">
         <div id="gauche"></div>
+        <br/>
         <div id="droite"></div>
     </div>
 
@@ -20,8 +36,8 @@
 
     <!-- Affichage des boutons de controle -->
     <div id="controle">
-        <button id="precedent" onclick="precedent();">Précédent</button>
-        <button id="suivant" onclick="suivant();">Suivant</button>
+        <button id="precedent" class="btn btn-light" onclick="precedent();">Précédent</button>
+        <button id="suivant"  class="btn btn-light" onclick="suivant();">Suivant</button>
     </div>
 </body>
 </html>
